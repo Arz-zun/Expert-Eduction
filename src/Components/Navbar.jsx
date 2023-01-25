@@ -15,8 +15,8 @@ const Navbar = () => {
       <div className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> University</div>
       <div className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> Study in Abroad</div>
       <div className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> Student Support</div>
-      <div className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> Contact</div>
       <a href='#test4' className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> About Us</a>
+      <div className='p-3 hover:text-white border-2 border-slate-700 rounded-3xl  hover:bg-slate-600 duration-300 cursor-pointer'> Contact</div>
       </div>
       </div>
       </div>
