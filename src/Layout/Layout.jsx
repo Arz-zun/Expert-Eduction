@@ -4,6 +4,7 @@ import Destination from "../Components/Destination";
 import Footer from "../Components/Footer";
 import Landingpage from "../Components/Landingpage";
 import Navbar from "../Components/Navbar";
+import Services from "../Components/Services";
 import University from "../Components/University";
 
 const Layout = () => {
@@ -16,7 +17,8 @@ const Layout = () => {
         <Landingpage />
         <div className="max-w-6xl m-auto">
           <Destination />
-          {/* <University /> */}
+          <University />
+          <Services/>
           <Contact/>
         </div>
       </div>

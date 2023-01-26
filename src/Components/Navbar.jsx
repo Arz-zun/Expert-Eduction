@@ -16,7 +16,7 @@ const Navbar = () => {
 
       <a href='#university' className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> University</a>
       <a  href='#destination' className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> Study in Abroad</a>
-      <a href='#student_support' className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> Student Support</a>
+      <a href='#student_support' className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> Services</a>
       <a href='#about' className='p-3 hover:text-white hover:bg-slate-600 duration-300 cursor-pointer'> About Us</a>
       <a href='#contact' className='p-3 hover:text-white border-2 border-slate-700 rounded-3xl  hover:bg-slate-600 duration-300 cursor-pointer'> Contact</a>
       </div>
