@@ -24,8 +24,16 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <div className="text-center text-2xl font-serif font-serif text-slate-300">
-              Sign up for News Letter
+            <div className="text-center text-2xl mb-5 font-serif font-serif text-slate-300">
+             Branches
+            </div>
+            <div className="flex flex-col text-white text-center gap-3">
+
+            <div>Kathmandu</div>
+            <div>Chitwan</div>
+            <div>Pokhara</div>
+            <div>Dharan</div>
+            <div>Nepalgunj</div>
             </div>
           </div>
           <div>

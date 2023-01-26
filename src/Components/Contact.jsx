@@ -16,13 +16,13 @@ const Contact = () => {
               <div className="text-center text-3xl font-semibold font-serif text-slate-600">
                 Expert Education{" "}
               </div>
-              <div className="tracking-tight text-sm">
+              <div className="my-3 text-sm">
                 Expert Education is a Leading Education and Migration Consulting
                 Institution with a global presence in 16 countries. We provide
                 honest, credible, and authentic counselling for studying in
                 Australia, Canada, the US and the UK.
               </div>
-              <div className="my-3">
+              <div className="my-3 flex flex-col gap-1">
                 <div className="flex items-center gap-3">
                   <HiOutlineOfficeBuilding />
                   <div className="font-semibold">
@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-3 p-5 ">
+            <form className="flex flex-col gap-3 p-5 ">
               <div className=" flex items-center">
                 <div
                   htmlFor=""
@@ -54,6 +54,8 @@ const Contact = () => {
                   Full Name :
                 </div>
                 <input
+                name="name"
+                required
                   type="text"
                   placeholder=""
                   className="p-1 outline-none border-2 w-64 border-slate-900 ml-3"
@@ -67,6 +69,8 @@ const Contact = () => {
                   Email :
                 </div>
                 <input
+                name="email"
+                required
                   type="email"
                   placeholder=""
                   className="p-1 outline-none border-2 w-64 border-slate-900 ml-3"
@@ -80,6 +84,7 @@ const Contact = () => {
                   Subject :
                 </label>
                 <input
+                required
                   type="text"
                   placeholder=""
                   className="p-1 outline-none border-2 w-64 border-slate-900 ml-3"
@@ -93,6 +98,7 @@ const Contact = () => {
                   Messege :
                 </div>
                 <textarea
+                required
                   className="pl-3 outline-none border-2 border-slate-900 ml-3"
                   name=""
                   id=""
@@ -102,10 +108,13 @@ const Contact = () => {
 
                 {/* <input type="text" placeholder="Name" /> */}
               </div>
-              <button className="bg-slate-700 w-32 p-2 text-white hover:bg-slate-900 rounded-2xl">
+              <div className="flex justify-center ">
+
+              <button type="submit" className="bg-slate-700 w-32 p-2 ml-10 text-white hover:bg-slate-900 rounded-2xl">
                 send messege
               </button>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
