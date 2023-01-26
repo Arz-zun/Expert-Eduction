@@ -5,8 +5,8 @@ import uk from "../assets/study_in_uk.jpg";
 // import australia from "../assets/aus.png"
 const Destination = () => {
   return (
-    <section className="">
-      <div className="text-slate-700 my-8 text-5xl text-center font-bold font-serif">
+    <section id="destination" className="">
+      <div className="text-slate-700 my-8 text-4xl text-center font-bold font-serif">
         DESTINATIONS
       </div>
       <div className=" grid gap-3 grid-cols-4">

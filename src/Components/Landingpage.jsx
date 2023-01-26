@@ -17,7 +17,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 const Landingpage = () => {
   return (
-    <section>
+    <section id="">
       <div className="">
         <Swiper
           cssMode={true}
@@ -36,7 +36,7 @@ const Landingpage = () => {
                     Study Abroad
                   </div>
                   <hr className="w-80" />
-                  <div style={{textShadow:"2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}} className="text-8xl font-bold text-white stroke-1 ">Study in</div>
+                  <div style={{textShadow:"2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}} className="text-8xl font-bold text-white ">Study in</div>
                   <div style={{textShadow:"2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}} className="text-8xl font-bold text-white ">Australia</div>
                 </div>
               </div>
