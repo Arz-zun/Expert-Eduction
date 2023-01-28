@@ -16,7 +16,7 @@ import { Pagination, Autoplay, Navigation } from "swiper";
 
 const University = () => {
   return (
-    <section id="university" className="text-slate-700 my-5   ">
+    <section id="university" className="text-slate-700 my-5 mt-28  ">
       <div className="text-slate-700 my-8 text-4xl text-center font-bold font-serif">
         UNIVERSITY
       </div>

@@ -1,16 +1,30 @@
-import React from "react";
+import React,{useRef } from "react";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { CiLocationOn } from "react-icons/ci";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiOutlinePhone } from "react-icons/ai";
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_xvj77me', 'template_zq9425q', form.current, 'LiXdBFYPlSZ5BaCT9')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
-    <section id="contact" className="my-3">
+    <section id="contact" className="my-5 mt-28">
       <div className="text-slate-700 my-8 text-4xl text-center font-bold font-serif">
         HAVE SOME QUESTION ?
       </div>
       <div className=" flex justify-center ">
-        <div className="w-[80%] shadow-2xl rounded-2xl shadow-slate-600 bg-slate-50">
+        <div className="w-[80%] shadow rounded-2xl shadow-slate-600 bg-slate-50">
           <div className="grid grid-cols-2 ">
             <div className="  rounded-tl-2xl rounded-bl-2xl p-5">
               <div className="text-center text-3xl font-semibold font-serif text-slate-600">
@@ -45,7 +59,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form className="flex flex-col gap-3 p-5 ">
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-3 p-5 ">
               <div className=" flex items-center">
                 <div
                   htmlFor=""
@@ -85,6 +99,7 @@ const Contact = () => {
                 </label>
                 <input
                 required
+                name="subject"
                   type="text"
                   placeholder=""
                   className="p-1 outline-none border-2 w-64 border-slate-900 ml-3"
@@ -100,7 +115,7 @@ const Contact = () => {
                 <textarea
                 required
                   className="pl-3 outline-none border-2 border-slate-900 ml-3"
-                  name=""
+                  name="message"
                   id=""
                   cols="30"
                   rows="1"

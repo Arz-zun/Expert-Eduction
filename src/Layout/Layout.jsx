@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import Landingpage from "../Components/Landingpage";
 import Navbar from "../Components/Navbar";
 import Services from "../Components/Services";
+import Testimonial from "../Components/Testimonial";
 import University from "../Components/University";
 
 const Layout = () => {
@@ -19,6 +20,7 @@ const Layout = () => {
           <Destination />
           <University />
           <Services/>
+          <Testimonial/>
           <Contact/>
         </div>
       </div>

@@ -6,7 +6,7 @@ import usa from "../assets/usa.jpg";
 // import australia from "../assets/aus.png"
 const Destination = () => {
   return (
-    <section id="destination" className="">
+    <section id="destination" className=" mt-28">
       <div className="text-slate-700 my-8 text-4xl text-center font-bold font-serif">
         DESTINATIONS
       </div>
